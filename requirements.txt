@@ -1,0 +1,16 @@
+pandas
+numpy
+scikit-learn
+joblib
+plotly
+matplotlib
+catboost
+xgboost
+lightgbm
+streamlit
+streamlit-folium
+folium
+prophet
+imbalanced-learn
+tqdm
+scipy
