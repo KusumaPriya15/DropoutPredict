@@ -1,12 +1,9 @@
+
 import streamlit as st
 import os
 
-st.set_page_config(
-    page_title="UDISE+ School Dropout Risk Analysis",
-    page_icon="🎓",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
+st.title("AI-Driven Early Warning System for Predicting Student dropout")
+
 
 # ============================================================
 # Custom CSS
@@ -259,3 +256,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

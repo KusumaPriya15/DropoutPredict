@@ -1,3 +1,4 @@
+
 # pages/5_🌐_Community_Learning_Hub.py
 import streamlit as st
 
@@ -6,7 +7,8 @@ import streamlit as st
 # ============================================================
 st.set_page_config(page_title="Community Learning Hub", page_icon="🌐", layout="wide")
 
-st.title("🌐 Community Learning Hub Platform")
+st.title("🌐 Community Learning Hub")
+
 st.markdown("""
 ### Empowering Education through Digital Learning
 
