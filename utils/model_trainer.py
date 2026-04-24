@@ -172,14 +172,22 @@ def train_all_models():
     acc = accuracy_score(y_test, y_pred_ensemble)
     print(f"🎯 Accuracy: {acc*100:.2f}%")
 
+    # metrics["CatXGB Ensemble (Final)"] = {
+    #     "accuracy": acc,
+    #     "precision": precision_score(y_test, y_pred_ensemble, average="weighted", zero_division=0),
+    #     "recall": recall_score(y_test, y_pred_ensemble, average="weighted", zero_division=0),
+    #     "f1_score": f1_score(y_test, y_pred_ensemble, average="weighted", zero_division=0),
+    #     "roc_auc": 0.0
+    # }
+    roc_auc = roc_auc_score(y_test, ensemble_probs, multi_class="ovr", average="weighted")
+
     metrics["CatXGB Ensemble (Final)"] = {
         "accuracy": acc,
         "precision": precision_score(y_test, y_pred_ensemble, average="weighted", zero_division=0),
         "recall": recall_score(y_test, y_pred_ensemble, average="weighted", zero_division=0),
         "f1_score": f1_score(y_test, y_pred_ensemble, average="weighted", zero_division=0),
-        "roc_auc": 0.0
+        "roc_auc": roc_auc
     }
-
     # -------------------- Save Models --------------------
     os.makedirs("models", exist_ok=True)
     joblib.dump(log_model, "models/logistic_regression.pkl")
