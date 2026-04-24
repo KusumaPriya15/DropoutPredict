@@ -47,7 +47,7 @@ st.subheader("🚀 Explore the Platform")
 # 🔗 Option 1 — Live hosted website link
 st.markdown("""
 You can explore the live platform here:
-👉 [Open E-Learning Platform](https://vidya-setu-two.vercel.app)
+👉 [Open E-Learning Platform](https://vidyasetu-red.vercel.app/)
 """)
 
 # 🔗 Option 2 — Embed the website inside Streamlit (iframe)
